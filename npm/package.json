@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/birthchart",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Birth Chart calculates a tropical natal chart from a birth date, time and location. It returns the sun, moon and rising signs, the ascendant and midheaven, and each planet's sign, degree and retrograde flag. Paid plans add the 12 house cusps, each planet's house, the major aspects and the element and modality balance.",
   "main": "index.js",
   "types": "index.d.ts",
