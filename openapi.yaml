@@ -59,8 +59,8 @@ paths:
             type: string
           required: false
           description: >-
-            An IANA timezone name (America/New_York) or a UTC offset (+05:30).
-            Looked up from the coordinates when omitted
+            An IANA timezone name (America/New_York) or a UTC offset (+05:30,
+            -0400 or UTC+05:30). Looked up from the coordinates when omitted
           example: America/New_York
         - name: houseSystem
           in: query
