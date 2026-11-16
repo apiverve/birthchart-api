@@ -38,7 +38,7 @@ class Client
         'time' => ['type' => 'string', 'required' => true],
         'lat' => ['type' => 'number', 'required' => true, 'min' => -90, 'max' => 90],
         'lon' => ['type' => 'number', 'required' => true, 'min' => -180, 'max' => 180],
-        'timezone' => ['type' => 'string', 'required' => false, 'format' => 'timezone'],
+        'timezone' => ['type' => 'string', 'required' => false],
         'houseSystem' => ['type' => 'string', 'required' => false]
     ];
 
