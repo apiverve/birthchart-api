@@ -30,7 +30,7 @@ class birthchartWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/birthchart';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"date":{"type":"string","required":true},"time":{"type":"string","required":true},"lat":{"type":"number","required":true,"min":-90,"max":90},"lon":{"type":"number","required":true,"min":-180,"max":180},"timezone":{"type":"string","required":false,"format":"timezone"},"houseSystem":{"type":"string","required":false,"default":"placidus"}};
+        this.validationRules = {"date":{"type":"string","required":true},"time":{"type":"string","required":true},"lat":{"type":"number","required":true,"min":-90,"max":90},"lon":{"type":"number","required":true,"min":-180,"max":180},"timezone":{"type":"string","required":false},"houseSystem":{"type":"string","required":false,"default":"placidus"}};
     }
 
     /**
