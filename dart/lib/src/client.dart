@@ -53,7 +53,7 @@ final _formatPatterns = {
 /// * [time] (required) - The local birth time in 24-hour HH:mm format
 /// * [lat] (required) - The latitude of the birthplace [min: -90, max: 90]
 /// * [lon] (required) - The longitude of the birthplace (east positive) [min: -180, max: 180]
-/// * [timezone] - An IANA timezone name (America/New_York) or a UTC offset (+05:30). Looked up from the coordinates when omitted [format: timezone]
+/// * [timezone] - An IANA timezone name (America/New_York) or a UTC offset (+05:30, -0400 or UTC+05:30). Looked up from the coordinates when omitted
 /// * [houseSystem] - The house system to use
 class BirthchartClient {
   final String apiKey;
@@ -66,7 +66,7 @@ class BirthchartClient {
     'time': ValidationRule(type: 'string', required: true),
     'lat': ValidationRule(type: 'number', required: true, min: -90, max: 90),
     'lon': ValidationRule(type: 'number', required: true, min: -180, max: 180),
-    'timezone': ValidationRule(type: 'string', required: false, format: 'timezone'),
+    'timezone': ValidationRule(type: 'string', required: false),
     'houseSystem': ValidationRule(type: 'string', required: false),
   };
 
