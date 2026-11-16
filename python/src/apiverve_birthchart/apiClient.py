@@ -28,7 +28,7 @@ class BirthchartAPIClient:
         "time": {"type": "string", "required": True},
         "lat": {"type": "number", "required": True, "min": -90, "max": 90},
         "lon": {"type": "number", "required": True, "min": -180, "max": 180},
-        "timezone": {"type": "string", "required": False, "format": "timezone"},
+        "timezone": {"type": "string", "required": False},
         "houseSystem": {"type": "string", "required": False, "default": "placidus"}
     }
 
