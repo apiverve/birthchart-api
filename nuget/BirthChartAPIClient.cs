@@ -71,7 +71,7 @@ namespace APIVerve.API.BirthChart
             { "time", new ValidationRule { Type = "string", Required = true } },
             { "lat", new ValidationRule { Type = "number", Required = true, Min = -90, Max = 90 } },
             { "lon", new ValidationRule { Type = "number", Required = true, Min = -180, Max = 180 } },
-            { "timezone", new ValidationRule { Type = "string", Required = false, Format = "timezone" } },
+            { "timezone", new ValidationRule { Type = "string", Required = false } },
             { "houseSystem", new ValidationRule { Type = "string", Required = false } }
         };
 

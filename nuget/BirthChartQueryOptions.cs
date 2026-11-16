@@ -35,7 +35,7 @@ namespace APIVerve.API.BirthChart
         public double Lon { get; set; }
 
         /// <summary>
-        /// An IANA timezone name (America/New_York) or a UTC offset (+05:30). Looked up from the coordinates when omitted
+        /// An IANA timezone name (America/New_York) or a UTC offset (+05:30, -0400 or UTC+05:30). Looked up from the coordinates when omitted
         /// </summary>
         [JsonProperty("timezone")]
         public string Timezone { get; set; }
